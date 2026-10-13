@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CVS Digital: tecnologia, construção civil e produtos digitais.">
+    <title>CVS Digital | Ideias que constroem o futuro</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #172033;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #101827;
+            color: white;
+            padding: 18px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #48a9ff;
+        }
+
+        nav {
+            display: flex;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #48a9ff;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #101827, #164b80);
+            color: white;
+            padding: 90px 7%;
+            text-align: center;
+        }
+
+        .hero .etiqueta {
+            color: #8ccaff;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .hero h1 {
+            font-size: clamp(34px, 6vw, 58px);
+            line-height: 1.15;
+            margin: 20px auto;
+            max-width: 850px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: 0 auto 28px;
+            color: #e1eafa;
+        }
+
+        .botao {
+            display: inline-block;
+            background: #48a9ff;
+            color: #101827;
+            text-decoration: none;
+            padding: 13px 24px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .botao:hover {
+            background: white;
+        }
+
+        .secao {
+            max-width: 1100px;
+            margin: auto;
+            padding: 65px 22px;
+        }
+
+        .titulo {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .titulo h2 {
+            font-size: 30px;
+            margin-bottom: 8px;
+        }
+
+        .cartoes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 22px;
+        }
+
+        .cartao {
+            background: white;
+            padding: 27px;
+            border-radius: 14px;
+            border: 1px solid #e1e8f0;
+            box-shadow: 0 6px 20px rgba(16, 24, 39, 0.05);
+        }
+
+        .cartao h3 {
+            color: #1768ad;
+        }
+
+        .sobre {
+            background: white;
+            text-align: center;
+        }
+
+        .sobre p {
+            max-width: 760px;
+            margin: 15px auto;
+        }
+
+        .contacto {
+            background: #e8f2fc;
+            text-align: center;
+            padding: 55px 20px;
+        }
+
+        footer {
+            background: #101827;
+            color: #dce5f1;
+            text-align: center;
+            padding: 25px 15px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                justify-content: center;
+                text-align: center;
+            }
+
+            nav {
+                justify-content: center;
+            }
+
+            .hero {
+                padding: 65px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">CVS <span>DIGITAL</span></div>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#ebooks">E-books</a>
+            <a href="#sobre">Sobre nós</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <p class="etiqueta">TECNOLOGIA • CONSTRUÇÃO • INOVAÇÃO</p>
+
+            <h1>Ideias que constroem o futuro.</h1>
+
+            <p>
+                Exploramos a tecnologia, o conhecimento e a construção civil
+                para desenvolver soluções úteis para pessoas e empresas.
+            </p>
+
+            <a class="botao" href="#servicos">Descobrir os nossos serviços</a>
+        </section>
+
+        <section class="secao" id="servicos">
+            <div class="titulo">
+                <h2>O que estamos a construir</h2>
+                <p>Projectos e soluções para um mundo cada vez mais digital.</p>
+            </div>
+
+            <div class="cartoes">
+                <article class="cartao">
+                    <h3>Construção Civil</h3>
+                    <p>
+                        Plantas, desenho técnico e conteúdos sobre
+                        materiais e construção.
+                    </p>
+                </article>
+
+                <article class="cartao">
+                    <h3>Tecnologia</h3>
+                    <p>
+                        Desenvolvimento de websites, aplicações
+                        e ferramentas digitais.
+                    </p>
+                </article>
+
+                <article class="cartao" id="ebooks">
+                    <h3>Biblioteca Digital</h3>
+                    <p>
+                        E-books educativos sobre inteligência artificial,
+                        negócios, informática e outras áreas.
+                    </p>
+                    <p><strong>Primeiros produtos em preparação.</strong></p>
+                </article>
+            </div>
+        </section>
+
+        <section class="sobre" id="sobre">
+            <div class="secao">
+                <div class="titulo">
+                    <h2>Sobre a CVS Digital</h2>
+                </div>
+
+                <p>
+                    A Cauchy Veloso Santos Digital & Construção é um
+                    projecto empresarial em desenvolvimento, com o objectivo
+                    de criar serviços e produtos digitais úteis.
+                </p>
+
+                <p>
+                    A nossa visão é crescer a partir de Moçambique e
+                    alcançar pessoas e empresas em diferentes países.
+                </p>
+            </div>
+        </section>
+
+        <section class="contacto" id="contacto">
+            <h2>Vamos construir novas ideias?</h2>
+            <p>Em breve, teremos aqui os nossos canais de contacto.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>CVS Digital — Cauchy Veloso Santos Digital & Construção</p>
+        <p>© 2026 · Projecto em desenvolvimento</p>
+    </footer>
+
+</body>
+</html>
